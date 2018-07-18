@@ -34,7 +34,7 @@ class CounterGroup extends Component{
         return <div className="CounterGroup">
             <input onChange={this.onCounterNumFieldChange} type="text" placeholder="请输入计数器个数"/>
             {counters}
-            <span>总和：{this.state.sum}</span>
+            <br/><span>总和：{this.state.sum}</span>
         </div>
     }
 
