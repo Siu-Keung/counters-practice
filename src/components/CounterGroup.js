@@ -22,7 +22,7 @@ class CounterGroup extends Component{
     }
 
     onCounterNumFieldChange = (event) => {
-        this.state = {counterNum : event.target.value, sum : 0};
+        this.state = {counterNum : event.target.value, sum : this.state.sum};
         this.setState(this.state);
     }
 

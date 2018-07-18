@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 class Counter extends Component {
     constructor(props) {
         super(props);
-        this.state = {initValue : props.initValue, num: 0, addCallback : props.addCallback, subCallback : props.subCallback};
+        this.state = {num: 0, addCallback : props.addCallback, subCallback : props.subCallback};
     }
 
     onSubButtonClicked = () => {
@@ -23,7 +23,7 @@ class Counter extends Component {
     render() {
         let elem = <div className="Counter">
             <input value="-" type="button" onClick={this.onSubButtonClicked}/>
-            <input value={this.state.initValue} type="text" disabled/>
+            <input value={this.state.num} type="text" disabled/>
             <input value="+" type="button" onClick={this.onAddButtonClicked}/>
         </div>;
         return elem;
